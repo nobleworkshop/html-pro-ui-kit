@@ -1,0 +1,19 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Главная страница';
+	- var pageClass= "ui";
+
+block content
+	.container.text-center.pt-75.pb-60
+		h1.mb-55 Проект команды HTML-PRO 01
+		.row
+			.col
+				.ui-card
+					h3.mb-25 UI-Kit
+					+test-button("./ui-kit/index.html")
+			.col
+				.ui-card
+					h3.mb-25 Главная страница
+					+test-button("./main.html")

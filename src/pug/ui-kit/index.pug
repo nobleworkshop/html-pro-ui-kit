@@ -1,0 +1,17 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'UI-kit и HTML фреймворк - Документация';
+	- var pageClass = 'body--dashboard';
+
+block content
+	h1 Документация по фреймворку #{time}
+	p Это PUG LESS фреймворк для быстрой верстки проектов. Он содержит в себе все необходимые элементы страницы. Каждый блок или секция имеют готовую pug разметку и less стили. На отдельной странице каждого блока можно найти код его верстки для использования.
+
+	ul
+		+linkList("Документация", "docs.html")
+		+linkList("Codestyle - правила написания кода", "docs-codestyle.html")
+		+linkList("Styleguide - правила по стилям", "docs-styleguide.html")
+		+linkList("Общие рекомендации", "docs-general-recomendations.html")

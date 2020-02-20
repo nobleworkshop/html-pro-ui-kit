@@ -1,0 +1,15 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Главная страница';
+    - var pageClass= "index-page";
+
+block content
+    header.header
+        h1.mb-25 #{jsonData.siteName}
+
+    include ./../sections/section.pug
+
+    footer.footer
+        h1 Footer

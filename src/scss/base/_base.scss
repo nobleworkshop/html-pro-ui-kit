@@ -1,0 +1,140 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $baseFont;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    position: relative;
+    color: #000;
+    line-height: 1;
+}
+
+/* fix for top margin collapsing and vertical scroll prevent for body tag, when body height = 100% */
+body::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 0px;
+    background-color: transparent;
+}
+
+input,
+textarea {
+    font-family: $baseFont;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    // font-weight: 400;
+    // line-height: 1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: $linkColor;
+}
+
+code,
+pre {
+    background-color: $lightGrayBg;
+    border-radius: 6px;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: monospace;
+    font-family: $codeFont;
+    font-size: 1rem;
+}
+
+pre {
+    color: $grayText;
+    line-height: 1.5;
+    margin: 15px 0;
+    overflow: auto;
+    padding: 10px;
+}
+
+code {
+    color: $grayText;
+    font-weight: 400;
+    padding: 0.3em 0.8em;
+}
+
+pre code {
+    padding: 0;
+}
+
+blockquote {
+    background: $lightGrayBg;
+    padding: 30px 80px;
+    position: relative;
+    width: 100%;
+    margin: 2em auto;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+blockquote:before {
+    content: "“";
+    font-weight: 900;
+    color: $lightGrayText;
+    opacity: 0.2;
+    font-size: 4em;
+    line-height: 1em;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 0;
+}
+
+blockquote p {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2a2a2a;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+hr,
+.hr-line {
+    border-bottom: 1px solid #e9eff3;
+}
+
+.content-padding {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+/***style for sticky-footer***/
+.sticky-footer-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sticky-footer-content {
+    flex: 1;
+}

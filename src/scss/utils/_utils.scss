@@ -1,0 +1,31 @@
+/* Floats */
+.float-right { float: right; }
+.float-left { float: left; }
+.clearfix::after, .clearfix::before {content: ''; display: table; clear: both;}
+
+/* Text align */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Font weight */
+.light { font-weight: 300; }
+.normal { font-weight: 400; }
+.strong { font-weight: 700; }
+
+$i: 0;
+@while $i <= 100 {
+
+    .mt-#{$i} {	margin-top: #{$i}px; }
+    .mb-#{$i} {	margin-bottom: #{$i}px; }
+    .ml-#{$i} {	margin-left: #{$i}px; }
+    .mr-#{$i} {	margin-right: #{$i}px; }
+
+    .pt-#{$i} {	padding-top: #{$i}px; }
+    .pb-#{$i} {	padding-bottom: #{$i}px; }
+    .pl-#{$i} {	padding-left: #{$i}px; }
+    .pr-#{$i} {	padding-right: #{$i}px; }
+
+    $i: $i + 5;
+}

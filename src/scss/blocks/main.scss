@@ -1,0 +1,11 @@
+.main {
+    width: 600px;
+    padding: 50px 25px;
+    margin: 0 auto;
+    background-color: rgb(230, 214, 65);
+    text-align: center;
+
+    @media (min-width: 992px) {
+        width: 400px;
+    }
+}

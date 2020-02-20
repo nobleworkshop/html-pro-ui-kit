@@ -1,0 +1,43 @@
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        //- meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{title}
+
+        meta(name="keywords" content= keywords)
+        meta(name="description" content= description)
+
+        <!-- build:css1 css/vendor.css -->
+        link(rel="stylesheet", href="./../libs/jquery-custom-scrollbar/jquery.custom-scrollbar.css")
+        <!-- endbuild -->
+
+        <!-- build:css2 css/styles.css -->
+        link(rel="stylesheet", href="./../css/main.css")
+        <!-- endbuild -->
+
+        //- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+
+    body(class=pageClass)
+        .clear
+        include ./../sections/left-panel.pug
+
+        .ui-kit-content.user-content
+            block content
+
+        <!-- build:js1 js/jquery.js -->
+        <script src="./../js/jquery-3.3.1.min.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js2 js/vendor.js -->
+        script(src="./../libs/jquery-custom-scrollbar/jquery.custom-scrollbar.js")
+        <!-- endbuild -->
+
+        <!-- build:js3 js/main.js -->
+        <script src="./../js/main.js"></script>
+        <!-- endbuild -->
