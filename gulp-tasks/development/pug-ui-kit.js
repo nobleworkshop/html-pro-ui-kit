@@ -1,5 +1,4 @@
 const gulp = require("gulp"); // Подключаем Gulp
-// const fileinclude = require("gulp-file-include"); // Для подключения файлов друг в друга
 const pugGlobbing = require("gulp-pug-globbing");
 const pug = require("gulp-pug");
 const plumber = require("gulp-plumber");
