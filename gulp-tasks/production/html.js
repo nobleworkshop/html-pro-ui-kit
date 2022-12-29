@@ -1,7 +1,8 @@
 const gulp = require("gulp");
 const usemin = require("gulp-usemin");
 const htmlclean = require("gulp-htmlclean");
-const rev = require("gulp-rev");
+// const rev = require("gulp-rev");
+const rev = import('gulp-rev');
 const minifyCss = require("gulp-minify-css");
 const uglify = require("gulp-uglify");
 

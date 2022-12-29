@@ -1,5 +1,6 @@
 const gulp = require("gulp");
-const imagemin = require("gulp-imagemin");
+// const imagemin = require("gulp-imagemin");
+const imagemin = import('gulp-imagemin');
 
 gulp.task("img:docs", function() {
     return (

@@ -1,5 +1,5 @@
 const gulp = require("gulp"); // Подключаем Gulp
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('node-sass'));
 const sassGlob = require("gulp-sass-glob");
 const gcmq = require("gulp-group-css-media-queries");
 const plumber = require("gulp-plumber");
